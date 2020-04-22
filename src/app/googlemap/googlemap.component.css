@@ -1,0 +1,35 @@
+.main {
+  text-align:center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#map {
+  margin: auto;
+  height: 500px; /* like this */
+  width: 60%;
+}
+
+.googlemap h1, h2 {
+  text-align: center;
+}
+
+.googlemap {
+  padding:10px;
+}
+
+.data-display {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+table td {
+  text-align: center;
+}

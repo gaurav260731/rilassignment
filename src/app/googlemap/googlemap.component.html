@@ -1,0 +1,32 @@
+<div class="googlemap">
+  <h1>
+    Google Map with Location Name
+  </h1>
+  <div #mapWrapper id="map"></div><br/>
+  <table class="data-display">
+    <tr>
+      <th >Name</th>
+      <th >Address</th>
+      <th >Location</th>
+    </tr>
+      <tr *ngFor="let dataval of data">
+        <td>{{dataval.name}}</td>
+        <td>{{dataval.address}}</td>
+        <td>{{dataval.description}}</td>
+      </tr>
+  </table>
+  <h2>Doughnut Chart</h2>
+<div style="display: block">
+  <canvas baseChart
+              [data]="doughnutChartData"
+              [labels]="doughnutChartLabels"
+              [colors]="chartColors"
+              [chartType]="doughnutChartType"
+              (chartHover)="chartHovered($event)"
+              (chartClick)="chartClicked($event)">
+    </canvas>
+</div>
+</div>
+
+
+

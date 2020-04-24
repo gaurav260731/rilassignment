@@ -8,7 +8,7 @@ import { GooglemapComponent } from './googlemap/googlemap.component';
 
 const routes: Routes = [
   {
-    path: 'login',
+    path: '',
     component: LoginComponent
   },
   {
@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'googlemap',
     component: GooglemapComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   },
 ];
 

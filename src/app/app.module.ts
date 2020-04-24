@@ -20,6 +20,8 @@ import { MatToolbarModule,
         } from '@angular/material';
 import { HeaderComponent } from './header/header.component';
 import {FormsModule } from '@angular/forms';
+import { StoreModule } from '@ngrx/store';
+import { addUserReducer } from '../app/login/login.reducer';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,8 @@ import {FormsModule } from '@angular/forms';
     FormsModule,
     MatProgressSpinnerModule,
     MatListModule,
-    MatTableModule
+    MatTableModule,
+    StoreModule.forRoot({addUser: addUserReducer})
   ],
   providers: [],
   bootstrap: [AppComponent]

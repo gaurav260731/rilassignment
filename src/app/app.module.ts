@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { GooglemapComponent } from './googlemap/googlemap.component';
-import { DoughnutComponent } from './doughnut/doughnut.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AgmCoreModule } from '@agm/core';
@@ -27,7 +26,6 @@ import { addUserReducer } from '../app/login/login.reducer';
   declarations: [
     AppComponent,
     GooglemapComponent,
-    DoughnutComponent,
     LoginComponent,
     DashboardComponent,
     HeaderComponent
